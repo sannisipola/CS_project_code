@@ -74,12 +74,8 @@ calc_reri_equation3 <- function(y00, y01, y10, y11) {
         - (y01/(n01-y01 + .5)) * ((n00-y00)/(y00 + .5)) 
         + 1)
 }       
-# Equation (2) trial
-newfunction <- function(y00, y01, y10, y11) {
-  return ((y11/(n11 - y11)) * ((n00 - y00)/y00) 
-        - (y10/(n10 - y10)) * ((n00 - y00)/y00) * (y01/(n01 - y01)) * ((n00 - y00)/y00) 
-          + 1)
-}
+
+
 #----------------------------------------------------------------
 # Monte carlo simulation
 SIM <- 500
